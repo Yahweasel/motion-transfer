@@ -66,7 +66,7 @@ static AVFrame *scaleFrame(
 
 static AVFrame *inputFrame(char *inUrl)
 {
-    AVFormatContext *fc;
+    AVFormatContext *fc = NULL;
     AVCodecContext *cc;
     const AVCodec *c;
     AVPacket *pkt;

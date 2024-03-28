@@ -22,8 +22,8 @@
 #include <libavutil/pixdesc.h>
 #include <libswscale/swscale.h>
 
-#define ENCODER "mpeg4"
-#define DECODER "mpeg4"
+#define ENCODER "h263p"
+#define DECODER "h263p"
 
 static char avError[1024] = {0};
 

@@ -291,6 +291,8 @@ int main(int argc, char **argv)
     AVFrame *inputFrame = NULL;
     AVCodecContext *motionCCtx = NULL;
 
+    av_log_set_level(AV_LOG_ERROR);
+
     for (argi = 1; argi < argc; argi++) {
         char *arg = argv[argi];
 

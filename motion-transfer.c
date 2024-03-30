@@ -122,7 +122,7 @@ static AVCodecContext *getEncoder(AVFrame *frame)
     SFN(c, avcodec_find_encoder_by_name, (ENCODER));
     SFN(cc, avcodec_alloc_context3, (c));
     cc->time_base.num = 1;
-    cc->time_base.num = 60;
+    cc->time_base.den = 60;
     cc->width = frame->width;
     cc->height = frame->height;
     cc->pix_fmt = AV_PIX_FMT_YUV420P;

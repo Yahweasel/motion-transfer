@@ -127,7 +127,7 @@ static AVCodecContext *getEncoder(AVFrame *frame)
     cc->height = frame->height;
     cc->pix_fmt = AV_PIX_FMT_YUV420P;
     cc->flags |= AV_CODEC_FLAG_QSCALE;
-    cc->global_quality = 1888;
+    cc->global_quality = 944;
     /*cc->bit_rate = frame->height * 100000LL;*/
     cc->bit_rate = -1;
     cc->keyint_min = cc->gop_size = 600;

@@ -1,0 +1,12 @@
+This tool transfers the motion between two or more frames into an unrelated
+frame, using video encoding as a rough approximation of "the motion between two
+or more frames". That is, it encodes a video using input frames, then applies
+the P-frames from that video to a different frame.
+
+The author's use for such a thing is this: take a frame of video, use AI to
+restyle it, then apply the motion so that the AI restyling the next frame will
+have a more concrete basis (from the original, restyled frame) instead of just
+the original frame.
+
+Released under ISC (see license in the C file). Compile with `make`. libav
+(FFmpeg libraries) required.
